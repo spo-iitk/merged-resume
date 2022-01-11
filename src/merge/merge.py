@@ -16,6 +16,7 @@ def merge_pdf(dir_path, output_filename):
         merger.append(pdf_file, bookmark)
     merger.write(output_filename)
     merger.close()
+    print("Merged {} pdf files in {}".format(len(files), output_filename))
 
 
 # find directories and merge
