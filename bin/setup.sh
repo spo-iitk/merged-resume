@@ -1,4 +1,5 @@
-#!/usr/bin/env bash  
+#!/usr/bin/env bash
 python -m venv venv
 source venv/bin/activate
 pip install PyPDF4
+pip install pre-commit
