@@ -1,5 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 python -m venv venv
 source venv/bin/activate
-pip install PyPDF4
+python -m pip install --upgrade pip
+pip install wheel
+pip install PyPDF2
 pip install pre-commit
