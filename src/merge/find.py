@@ -2,7 +2,7 @@ from os import path, listdir
 from pathlib import Path
 
 """
-Find zip files.
+Find pdf directories.
 """
 
 # get root path

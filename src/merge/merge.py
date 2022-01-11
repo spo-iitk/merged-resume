@@ -3,7 +3,11 @@ from PyPDF2 import PdfFileMerger
 from os import path
 from merge.find import root_dir, find
 
+"""
+Merge extracted PDF files.
+"""
 
+# Merge pdf from path
 def merge_pdf(dir_path, output_filename):
     merger = PdfFileMerger(strict=False)
     files = glob(path.join(dir_path, "*.{}".format("pdf")))
@@ -14,6 +18,7 @@ def merge_pdf(dir_path, output_filename):
     merger.close()
 
 
+# find directories and merge
 def merge():
     # get the path of the directory
     dir_path = path.join(root_dir(), "tmp")
