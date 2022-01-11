@@ -1,7 +1,7 @@
 from os import path
 from shutil import rmtree
 import zipfile
-from find import root_dir, find
+from unzip.find import root_dir, find
 
 """
 Unzip the zip file to tmp.

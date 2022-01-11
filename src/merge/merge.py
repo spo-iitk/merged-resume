@@ -1,7 +1,7 @@
 from glob import glob
 from PyPDF2 import PdfFileMerger
 from os import path
-from find import root_dir, find
+from merge.find import root_dir, find
 
 
 def merge_pdf(dir_path, output_filename):
