@@ -1,5 +1,5 @@
-from unzip.unzip import unzip, cleanup
-from merge.merge import merge
+from unzip import unzip, cleanup
+from merge import merge
 
 
 def main():
