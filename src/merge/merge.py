@@ -11,6 +11,7 @@ Merge extracted PDF files.
 def merge_pdf(dir_path, output_filename):
     merger = PdfFileMerger(strict=False)
     files = glob(path.join(dir_path, "*.{}".format("pdf")))
+    files = sorted(files)
     for pdf_file in files:
         bookmark = path.basename(pdf_file[:-4])
         merger.append(pdf_file, bookmark)

@@ -5,7 +5,7 @@ from merge import merge
 def main():
     files = unzip()
     for file in files:
-        print("Unzipping file ", file, "...")
+        print("Unzipping file", file, "\b...")
     if len(files) == 0:
         print("No zip files in _inout directory. Exiting program.")
         return
